@@ -1,8 +1,6 @@
-//import Chart from 'chart.js/auto';
-
 async function fetchPackage() {
   try {
-    const response = await fetch('package.json');
+    const response = await fetch('dataJson.json');
     const data = await response.json();
     return data.results;
   } catch (error) {
